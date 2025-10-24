@@ -1,28 +1,124 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Najeh's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur mon Portfolio</h1>
+    <div class="container">
+      <h1>NajehCh</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#scripts">Scripts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
-  <section>
-    <h2>À propos de moi</h2>
-    <p>Je suis un développeur passionné par la création de sites web.</p>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h2>Hello, I'm Najeh</h2>
+      <p>Cloud Computing Engineer passionate about development, automation, and modern infrastructures.</p>
+    </div>
   </section>
-  <section>
-    <h2>Mes projets</h2>
-    <ul>
-      <li><a href="https://github.com/NajehCh/projet1">Projet 1</a></li>
-      <li><a href="https://github.com/NajehCh/projet2">Projet 2</a></li>
-    </ul>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I love learning new technologies, deploying modern infrastructures, and automating processes. I enjoy solving complex problems and building efficient solutions.</p>
   </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Short description of Project 1.</p>
+        <a href="https://github.com/NajehCh/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Short description of Project 2.</p>
+        <a href="https://github.com/NajehCh/project2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Short description of Project 3.</p>
+        <a href="https://github.com/NajehCh/project3" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Carousel -->
+  <section id="certificates" class="container">
+    <h2>Certificates</h2>
+    <div class="carousel">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-track">
+        <div class="certificate-card">
+          <img src="images/certificate1.jpg" alt="Certificate 1">
+          <p>Certificate 1 Name</p>
+        </div>
+        <div class="certificate-card">
+          <img src="images/certificate2.jpg" alt="Certificate 2">
+          <p>Certificate 2 Name</p>
+        </div>
+        <div class="certificate-card">
+          <img src="images/certificate3.jpg" alt="Certificate 3">
+          <p>Certificate 3 Name</p>
+        </div>
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Scripts & Tools -->
+  <section id="scripts" class="container">
+    <h2>Scripts & Tools</h2>
+    <div class="filter-buttons">
+      <button onclick="filterScripts('all')">All</button>
+      <button onclick="filterScripts('Python')">Python</button>
+      <button onclick="filterScripts('Node')">Node.js</button>
+      <button onclick="filterScripts('Bash')">Bash</button>
+    </div>
+    <div class="scripts-grid">
+      <div class="script-card" data-lang="Python">
+        <h3>Script 1</h3>
+        <p>Automates file backups using Python.</p>
+        <a href="https://github.com/NajehCh/script1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="script-card" data-lang="Node">
+        <h3>Tool 2</h3>
+        <p>Node.js tool to monitor system performance.</p>
+        <a href="https://github.com/NajehCh/tool2" target="_blank">View on GitHub</a>
+      </div>
+      <div class="script-card" data-lang="Bash">
+        <h3>Script 3</h3>
+        <p>Bash automation for deploying Docker containers.</p>
+        <a href="https://github.com/NajehCh/script3" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:najeh@example.com">najeh@example.com</a></p>
+    <p>Find me on GitHub: <a href="https://github.com/NajehCh" target="_blank">NajehCh</a></p>
+  </section>
+
   <footer>
-    <p>Contactez-moi à : <a href="mailto:najeh@example.com">najeh@example.com</a></p>
+    <p>&copy; 2025 NajehCh. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
